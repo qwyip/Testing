@@ -52,9 +52,8 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = text=event.message.text
-    if re.match('告訴我秘密',message):
+    if re.match('Start',message):
         carousel_template_message = TemplateSendMessage(
-            alt_text='免費教學影片',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
@@ -64,12 +63,13 @@ def handle_message(event):
                         actions=[
                             MessageAction(
                                 label='大一課程',
-                                text='微積分（一）、（二）\n 程式設計（一）、（二） \n 普通物理學（一）、（二） \n 數位電路導論 \n 綫性代數'
+                                text='大一 \n微積分（一）、（二）\n程式設計（一）、（二） \n普通物理學（一）、（二） \n數位電路導論 \n綫性代數 \n\n 大二\n資料結構 \n演算法 \n機率與統計 \n數位系統導論 \n數位系統實驗 \n計算機組織 \n離散數學 \n電腦網路概論\n\n大三\n資訊專題（一）、（二） \n作業系統 \n編譯系統 \n微算機原理與應用（含實驗)'
                             ),
-                            MessageAction(
-                                label='大二課程',
-                                text='資料結構 \n 演算法 \n 機率與統計 \n 數位系統導論 \n 數位系統實驗 \n 計算機組織 \n 離散數學 \n 電腦網路概論'
+                            URIAction(
+                                label='選課系統',
+                                uri='https://course.ncku.edu.tw/index.php?c=qry11215&i=VGQAalZmVzwDd1ohBj1QMFE4CC0BOFJxVD8GalZsUmYGYAk9VWJWIVZqUmIFP1d5UT9TJgE7VWZXPFVmU24EewM7UDoANAdtUT8BM1FhAWpSegh8BW8FM1E7CC9QNFAwBCMPdwNQD2UFbA8sAjlWKVdgAmAAOwBwVDsCJQ9JAz5UIgByVmlXewNlWmgGNlAwUTIINAEwUmlUNgY5Vi1SJAZrCTZVY1ZwViNSKgV2V3lRZ1N3ATpVMlc8VXdTIQRuAzZQZQB2B3RRZQF6UWoBZ1I7CC0FNgVrUW0IYVA1UDIENg8hAzQPeAU5Dz8COFZ4VwwCdwA6AC9UbAI4DzkDNlQwAGtWM1c8Az1aaAZ8UHJROAg4AWtScVRgBmZWJlIjBg4Ja1U2VnBWa1IgBT9XaVFmUyYBRlUwVyRVblMpBH0DIVA6ADUHbFF8AXtRcgFrUmAINQVhBT5ReghkUGpQZQRoD2oDNQ87BTgPZwI4VmtXYQI8ADsAY1Q1AjIPMwNuVD8AYlZpV28DNlpjBjZQMVE5CGYBa1JgVD8GalZsUmYGYAkwVWJWL1YjUmkFNFdhUX5TYwEiVTxXZFVvU2QEOwMv'
                             )
+                    
                         ]
                     ),
                     CarouselColumn(
