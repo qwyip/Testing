@@ -62,11 +62,11 @@ def handle_message(event):
                         actions=[
                             MessageAction(
                                 label='大一課程',
-                                text='大一\n\n微積分（一）、（二）\n程式設計（一）、（二） \n普通物理學（一）、（二） \n數位電路導論 \n綫性代數\n\n大二\n資料結構 \n演算法 \n機率與統計 \n數位系統導論 \n數位系統實驗 \n計算機組織 \n離散數學 \n電腦網路概論\n\n大三\n資訊專題（一）、（二） \n作業系統 \n編譯系統 \n微算機原理與應用（含實驗）'
+                                text='大一\n微積分（一）、（二）\n程式設計（一）、（二） \n普通物理學（一）、（二） \n數位電路導論 \n綫性代數\n\n大二\n資料結構 \n演算法 \n機率與統計 \n數位系統導論 \n數位系統實驗 \n計算機組織 \n離散數學 \n電腦網路概論\n\n大三\n資訊專題（一）、（二） \n作業系統 \n編譯系統 \n微算機原理與應用（含實驗）'
                             ),
                             URIAction(
                                 label='馬上查看',
-                                uri='https://marketingliveincode.com/?page_id=2532'
+                                uri='https://course.ncku.edu.tw/index.php?c=qry11215&i=VGQAalZmVzwDd1ohBj1QMFE4CC0BOFJxVD8GalZsUmYGYAk9VWJWIVZqUmIFP1d5UT9TJgE7VWZXPFVmU24EewM7UDoANAdtUT8BM1FhAWpSegh8BW8FM1E7CC9QNFAwBCMPdwNQD2UFbA8sAjlWKVdgAmAAOwBwVDsCJQ9JAz5UIgByVmlXewNlWmgGNlAwUTIINAEwUmlUNgY5Vi1SJAZrCTZVY1ZwViNSKgV2V3lRZ1N3ATpVMlc8VXdTIQRuAzZQZQB2B3RRZQF6UWoBZ1I7CC0FNgVrUW0IYVA1UDIENg8hAzQPeAU5Dz8COFZ4VwwCdwA6AC9UbAI4DzkDNlQwAGtWM1c8Az1aaAZ8UHJROAg4AWtScVRgBmZWJlIjBg4Ja1U2VnBWa1IgBT9XaVFmUyYBRlUwVyRVblMpBH0DIVA6ADUHbFF8AXtRcgFrUmAINQVhBT5ReghkUGpQZQRoD2oDNQ87BTgPZwI4VmtXYQI8ADsAY1Q1AjIPMwNuVD8AYlZpV28DNlpjBjZQMVE5CGYBa1JgVD8GalZsUmYGYAkwVWJWL1YjUmkFNFdhUX5TYwEiVTxXZFVvU2QEOwMv'
                             )
                         ]
                     ),
