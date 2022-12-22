@@ -72,31 +72,31 @@ def handle_message(event):
                     ),
                     CarouselColumn(
                         thumbnail_image_url='https://i.imgur.com/W7nI6fg.jpg',
-                        title='Line Bot聊天機器人',
-                        text='台灣最廣泛使用的通訊軟體',
+                        title='110年成大資工系開設課程',
+                        text='看看哪些課程所剩人數不多。。。',
                         actions=[
-                            MessageAction(
-                                label='教學內容',
-                                text='Line Bot申請與串接'
+                            URIAction(
+                                label='110年上學期',
+                                uri='https://course-query.acad.ncku.edu.tw/index.php?c=qry11215&i=VTJRbAFnUj0HLlQlAmpRYA5nAnMCOQVzUjtUbgQ6BGUJYVA4WWxXI1VoVDUFO10tVmQJLghvUmRTbgQ1CTpZLFc4UWxSMARqATIAOFIyUmgELAcnAWlUNQ5mBndZLgghCjYOPw5yU3YAPFd0VWtSMwRvVHMNYFI0VGNVcgEzDXBVaVFlAWlSJQcmVDMCPVFzDmYCIgJqBWBSOlQlBDEEdglrUH1ZPldqVWFUPwVgXTVWNgk2CC9SdlNuBDYJOll1VzVRM1JwBCUBDABsUm9ScARsBycBaVQ1DmYGd1ljCH8KEg5nDidTdgA8V3pVOFI6BGRUYA1hUj5UMlVqAToNOVUoUSUBaVI0B29UdAIjUSgOLgJzAmsFIlI6VDIEOgR2CSVQblkzVzVVIFQmBTpdfFY9CTsIblInUzcEbglsWTtXNFExUmUEcwFoAHFSOlJjBG0HdgEFVCIOZwYoWTQIYgpiDm8ONVNvAGZXPVVgUjoELlQiDWtSMlRpVXIBbA1mVSNRIgEMUmkHOlR0AmtRIg5nAmMCagVzUkZUMAQiBG8JLVB9WSRXalVjVD4FI119ViUJNwg1Uj9TYQQ7CXtZPldrUWZSOwQ4AWkAMlI7UjsEbQdlAWhUaQ5mBmZZZggxCmkObA47Uz0APVc2VWFSMARuVDgNa1I2VGhVOQEyDTJVYlFmAWhSbgdvVGICa1E4DmcCYAJhBWRSO1R6BHMEbglhUDpZdVc3VXBUPwVjXTVWNwk3CCk='
                             ),
                             URIAction(
-                                label='馬上查看',
-                                uri='https://marketingliveincode.com/?page_id=2532'
+                                label='110年下學期',
+                                uri='https://course-query.acad.ncku.edu.tw/index.php?c=qry11215&i=AWYGO1M1VzgCK1cmBm5SYwJrVCUGPVUjUzpVb1FvBmcOZgJqCD1UIAU4BGUHOVEhU2FVcl45VmBSbwQ1CzhbLgRrATwGZFQ6UmFVbVs7AzkHL1NzUjpUNQBoUyJXIFV8AT0PPlklUncGOll6AD4DYgFqBSILZgdhCD9Uc1poWSQBPQYyUztXIAIjVzAGOVJwAmpUdAZuVTBTO1UkUWcGdA5sAi8Ib1RpBTEEbwdiUTlTM1VqXnlWclJvBDYLOFt3BGYBYwYkVHVSX1U5W2YDIQdvU3NSOlQ1AGhTIldtVSIBGQ9mWXBSdwY6WXQAbQNrAWEFMQtnB2sIblRrWmFZbQF8BnJTO1cxAmpXdwYnUisCIlQlBm9VclM7VTNRbwZ0DiICPAhiVDYFcAR2BzhRcFM4VWdeOFYjUjYEbgtuWzkEZwFhBjFUI1I7VSRbMwMyB25TIlJWVCIAaVN9VzpVPwFpD25ZYlJuBmBZMwA1A2sBKwVzC20HZwg1VHNaN1kyAXcGdVNeV2wCP1d3Bm9SIQJrVDUGblUjU0dVMVF3Bm0OKgIvCHVUaQUzBG4HIVFxUyBVa15jVjtSYAQ7C3lbPAQ4ATYGb1RoUjpVZ1syA2oHblMxUjtUaQBoUzNXaFVsAWIPbVlsUjwGO1k4ADQDYQFrBWkLbQdjCDRUOFppWWYBNgYxUzpXawJqV2EGb1I7AmtUNgZlVTRTOlV7USYGbA5mAmgIJFQ0BSAEbwdhUTlTMlVrXn8='
                             )
                         ]
                     ),
                     CarouselColumn(
                         thumbnail_image_url='https://i.imgur.com/l7rzfIK.jpg',
-                        title='Telegram Bot聊天機器人',
-                        text='唯有真正的方便，能帶來意想不到的價值',
+                        title='學生常用鏈接',
+                        text='沒用過別説是成大生',
                         actions=[
-                            MessageAction(
-                                label='教學內容',
-                                text='Telegrame申請與串接'
+                            URIAction(
+                                label='資工系網',
+                                uri='https://www.csie.ncku.edu.tw/zh-hant/ncku_csie/'
                             ),
                             URIAction(
-                                label='馬上查看',
-                                uri='https://marketingliveincode.com/?page_id=2648'
+                                label='全校獎學金查詢系統',
+                                uri='http://sgd.adm.ncku.edu.tw/scholarship/'
                             )
                         ]
                     )
