@@ -52,23 +52,26 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = text=event.message.text
-    if re.match('告訴我秘密',message):
+    if re.match('Start',message):
         carousel_template_message = TemplateSendMessage(
-            alt_text='免費教學影片',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
                         thumbnail_image_url='https://i.imgur.com/wpM584d.jpg',
-                        title='Python基礎教學',
-                        text='萬丈高樓平地起',
+                        title='成大資工必修課程',
+                        text='60學分的必修有哪些QQ',
                         actions=[
                             MessageAction(
-                                label='教學內容',
-                                text='拆解步驟詳細介紹安裝並使用Anaconda、Python、Spyder、VScode…'
+                                label='大一課程',
+                                text='微積分（一）、（二）\n 程式設計（一）、（二） \n 普通物理學（一）、（二） \n 數位電路導論 \n 綫性代數'
                             ),
-                            URIAction(
-                                label='馬上查看',
-                                uri='https://marketingliveincode.com/?page_id=270'
+                            MessageAction(
+                                label='大二課程',
+                                text='資料結構 \n 演算法 \n 機率與統計 \n 數位系統導論 \n 數位系統實驗 \n 計算機組織 \n 離散數學 \n 電腦網路概論'
+                            ),
+                            MessageAction(
+                                label='大三課程',
+                                text='資訊專題（一）、（二） \n 作業系統 \n 編譯系統 \n 微算機原理與應用（含實驗'
                             )
                         ]
                     ),
