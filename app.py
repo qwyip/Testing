@@ -69,10 +69,6 @@ def handle_message(event):
                             MessageAction(
                                 label='大二課程',
                                 text='資料結構 \n 演算法 \n 機率與統計 \n 數位系統導論 \n 數位系統實驗 \n 計算機組織 \n 離散數學 \n 電腦網路概論'
-                            ),
-                            MessageAction(
-                                label='大三課程',
-                                text='資訊專題（一）、（二） \n 作業系統 \n 編譯系統 \n 微算機原理與應用（含實驗'
                             )
                         ]
                     ),
