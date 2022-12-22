@@ -62,11 +62,11 @@ def handle_message(event):
                         actions=[
                             MessageAction(
                                 label='大一課程',
-                                text='微積分（一）、（二）\n程式設計（一）、（二） \n普通物理學（一）、（二） \n數位電路導論 \n 綫性代數\n\n資料結構 \n 演算法 \n 機率與統計 \n 數位系統導論 \n 數位系統實驗 \n 計算機組織 \n 離散數學 \n 電腦網路概論'
+                                text='大一\n\n微積分（一）、（二）\n程式設計（一）、（二） \n普通物理學（一）、（二） \n數位電路導論 \n綫性代數\n\n大二\n資料結構 \n演算法 \n機率與統計 \n數位系統導論 \n數位系統實驗 \n計算機組織 \n離散數學 \n電腦網路概論\n\n大三\n資訊專題（一）、（二） \n作業系統 \n編譯系統 \n微算機原理與應用（含實驗）'
                             ),
-                            MessageAction(
-                                label='大二課程',
-                                text='資料結構 \n 演算法 \n 機率與統計 \n 數位系統導論 \n 數位系統實驗 \n 計算機組織 \n 離散數學 \n 電腦網路概論'
+                            URIAction(
+                                label='馬上查看',
+                                uri='https://marketingliveincode.com/?page_id=2532'
                             )
                         ]
                     ),
