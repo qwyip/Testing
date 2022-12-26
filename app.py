@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jun  2 21:16:35 2021
-@author: Ivan
-版權屬於「行銷搬進大程式」所有，若有疑問，可聯絡ivanyang0606@gmail.com
-Line Bot聊天機器人
-第四章 選單功能
-多樣版組合按鈕CarouselTemplate
-"""
 #載入LineBot所需要的套件
 from flask import Flask, request, abort
 
@@ -24,8 +15,6 @@ app = Flask(__name__)
 line_bot_api = LineBotApi('sxZvkJ/GC7RdtY6jmav7xB9TFcmTIqZw9FJ5zF4rQMKUVwuZGl467dBL8bzvN/8Yor8geOWVqc06sa6ufPEVwipidocTrCgYCYRUoMf9RMGL3Z/dCCRwGnQ3e4TdRHpPua15cjRHUiYRz3evDJQXrgdB04t89/1O/w1cDnyilFU=')
 # 必須放上自己的Channel Secret
 handler = WebhookHandler('1c2ab0310db47ca0710b64bbb976e3b0')
-
-line_bot_api.push_message('U146570034b8d6111d1e048e2749cd88b', TextSendMessage(text='你可以開始了'))
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -50,13 +39,13 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     message = text=event.message.text
-    if re.match('告訴我秘密',message):
+    if re.match('Start',message):
         carousel_template_message = TemplateSendMessage(
             alt_text='免費教學影片',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
-                        thumbnail_image_url='https://i.imgur.com/wpM584d.jpg',
+                        thumbnail_image_url='https://imgur.com/a/87EqciS',
                         title='成大資工必修課程',
                         text='60學分的必修有哪些QQ',
                         actions=[
@@ -71,7 +60,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url='https://i.imgur.com/W7nI6fg.jpg',
+                        thumbnail_image_url='https://imgur.com/a1DBBLN',
                         title='110年成大資工系開設課程',
                         text='看看哪些課程所剩人數不多。。。',
                         actions=[
@@ -86,7 +75,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url='https://i.imgur.com/l7rzfIK.jpg',
+                        thumbnail_image_url='https://imgur.com/o9R5qH6',
                         title='學生常用鏈接',
                         text='沒用過別説是成大生',
                         actions=[
